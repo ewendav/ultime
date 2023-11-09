@@ -60,7 +60,6 @@ window.addEventListener("load", ()=>{
 
                 setTimeout(()=>{
                     loaderContainer.remove()
-                window.body.style.overflowY = "visible"
                 },1000)
 
             }, 3000)

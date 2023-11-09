@@ -25,7 +25,9 @@ Route::get('/collection/{collectionId_slug}/sousCollection/{sousCollectionId_slu
 
 Route::get('/collection/{collectionId_slug}/sousCollection/{sousCollectionId_slug}/sousCategorie/{sousCategorieId_slug}', [ShopController::class, "collection"])->name("collection/sousCollection/sousCategorie");
 
-Route::get('/collection/{collectionId_slug}/produit/{produitId_slug}', [ShopController::class, "produit"]);
+Route::get('/collection/{collectionId_slug}/produit/{produitId_slug}', [ShopController::class, "produit"])->name("produit");
+Route::post('ajouterAuPanier/{productId_slug}', [ShopController::class, "ajouterAuPanier"]);
+
 
 Route::prefix("admin")->middleware(["auth", "isAdmin"])->group(function(){
 
@@ -39,6 +41,12 @@ Route::prefix("admin")->middleware(["auth", "isAdmin"])->group(function(){
     Route::put("/attribute/update/", [ShopController::class,"updateAttribute"])->name("admin/updateAttribute");
 
 });
+
+
+Route::get('/panier', [ShopController::class, "panier"])->name("panier");
+Route::get('/panier/supprimer/{productId_slug}', [ShopController::class, "panierSupprimer"])->name("panier/supprimer");
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

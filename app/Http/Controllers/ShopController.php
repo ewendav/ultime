@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 use App\Models\sousCategorie;
 use App\Models\sousCollection;
 use App\Models\products_tailles;
+use App\Models\ProductGroups;
+
 use Illuminate\Support\Facades\Storage;
 
 
@@ -66,6 +68,7 @@ class ShopController extends Controller
             "head" => $collection->name,
             "products" => $products->setCollection($products->groupBy('variante')),
             "description"=> $collection->description,
+            "backgroundImg"=> $collection->image,
             "sousCollec"=> $sousCollec,
             "sousCatego"=> $sousCatego,
             "sousCategorieId_slug"=> $sousCategorieId_slug,
@@ -76,19 +79,119 @@ class ShopController extends Controller
     public function produit(string $collectionId_slug,string $produitId_slug){
         $produit = Product::where("id", "=",$produitId_slug)->where("active", "=", "1")->get();
 
-        $sizes = "";
+        $sizes = [];
+        $variantes = [];
+        $images = Image::where("product_id", "=", $produitId_slug)->get();
+
+        if($produit[0]->group_id != null){
+
+            $IdVarianteProduit = ProductGroups::where("product_id", "=" , $produit[0]->id)->firstOrFail()->variante;
+
+            $productGroupVariante = ProductGroups::where("group_id", "=", $produit[0]->group_id)
+                ->where("variante", "=", $IdVarianteProduit)->get();
 
 
-        if($produit[0]->size != null){
-            $sizes = products_tailles::where("product_id", "=", $produitId_slug)->get()->toArray();
+            $variantesDuProduit = ProductGroups::where("group_id", "=", $produit[0]->group_id)
+                ->distinct("variante")
+                ->get();
 
+            foreach ($variantesDuProduit as $v){
+
+                if($v->product_id !== $produit[0]->id){
+                $variantes[] = Product::where("id", "=", $v->product_id)->first();
+
+                }
+
+            }
+
+            foreach ($productGroupVariante as $p){
+
+                if($p->taille != null){
+
+                    $t = Taille::where("id", "=", $p->taille)
+                        ->first();
+
+                    $sizes[$t->name] = $p->product_id;
+                }
+
+            }
         }
 
 
         return view("product", [
             "product" => $produit[0],
             "sizes" => $sizes,
+            "variantes" => $variantes,
+            "images" => $images,
         ]);
+    }
+
+    public function ajouterAuPanier($productId){
+
+        $product = Product::find($productId);
+
+        $ligneGroup = ProductGroups::where("product_id", "=", $productId)->find(1);
+
+        $idTaille = null;
+        $idVariante = null;
+
+        if($ligneGroup?->taille){
+            $idTaille = Taille::find( $ligneGroup->taille);
+        }
+
+        if($ligneGroup?->variante){
+            $idVariante = Variante::find($ligneGroup->variante);
+        }
+
+
+        $cart = session()->get('cart', []);
+
+
+        $cart[$productId]=[
+            'id' => $product->id,
+            'name' => $product->name,
+            'price' => $product->price,
+            'image' => $product->image,
+            'taille' => $idVariante?->name,
+            'variante' => $idTaille?->name,
+        ];
+
+        session()->put('cart', $cart);
+
+    }
+
+    public function panier(){
+
+        $cart = session()->get('cart', []);
+
+        $total = 0;
+
+        foreach ($cart as $pdt){
+            $total += $pdt["price"];
+        }
+
+        return view('panier', [
+            'total' => $total,
+            'cart' =>  $cart,
+
+        ]);
+    }
+
+    public function panierSupprimer($productId_slug){
+        $cart = session()->get('cart', []);
+
+
+
+        $total = 0;
+
+        foreach ($cart as $pdt){
+            $total += $pdt["price"];
+        }
+
+        return view('panier', [
+            'total' => $total,
+        ]);
+
     }
 
     public function createProduct(Request $request){

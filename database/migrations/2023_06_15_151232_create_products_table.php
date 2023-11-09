@@ -21,15 +21,15 @@ return new class extends Migration
             $table->string("image");
             $table->integer("price");
             $table->boolean("active");
-            $table->boolean("size")->nullable(true);
+            $table->unsignedBigInteger("group_id")->nullable(true);  // A SUPR
 
-            $table->unsignedBigInteger("variante")->nullable(true);
+
 
             $table->foreign("sous_categorie_id")->references("id")->on("sous_categories");
             $table->foreign("collection_id")->references("id")->on("collections");
             $table->foreign("sous_collection_id")->references("id")->on("sous_collections");
+            $table->foreign("group_id")->references("id")->on("groups");
 
-            $table->foreign("variante")->references("id")->on("variantes");
         });
     }
 

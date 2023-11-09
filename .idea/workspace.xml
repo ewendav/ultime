@@ -4,16 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bbfba76-8f98-468e-96d0-d3cfeef80356" name="Changes" comment="swag la lumière au bout du tunnel">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+    <list default="true" id="0bbfba76-8f98-468e-96d0-d3cfeef80356" name="Changes" comment="swag">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/sI72uAn1usgtN4csYfnJR9H0ilTZANc4vCkY4rhv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/04064083d8320d4552c18c8e772da936.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/099ee632bccc81759e90f57ebaff4dba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/0bd497b9d54b91dfee1a48379af7ed90.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/0de913cccba7bb2adc7283b128889825.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/16dc8082f19011812790dcbca6e223df.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/1c2b510f5ff1225e0e2516d179782642.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/2a1857c285dff08ee95ba6052f8518ce.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/3400548a5de50d8a04020e1b2f4c0059.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/35a7ad357f1ce72584779e69bf028799.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/3826b25bbe51351cdab5558860b258af.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/3e9ac00ec2c0e1b24292f02efd754f52.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/3f902079ce76f41f03d6626b84862675.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/4775ac9368c85d2984d43d71acf95500.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/4c4ded4fcb571c18457c4dc0f739176f.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/4e84adcdb52da496f47fd34a4c56b13d.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/56bc4289cdaa34985ffc1124eac91d83.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/61155b1399d32a35844acf3d311d4b01.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/79928d2f91050705268431193dd55549.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/7c9566f80d51968101cad5c89baa1439.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/810eee09899bc6ccbf79902c86532784.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/81d4fd327161b37738e0326b6a764dc7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/8a528e477142e8dc310e75cda7308945.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/8b70b08333ca3a351182759169ac1ce8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/8d38b6e119afb6751b956758839fa705.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/92ff425ae991766c8a99b493ed29458d.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/95e79a5a07c3aa8a25309379b922315c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/97d958ffb86ff06558630b42a3e3e7e6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/98fc36e4c719d51c3739d6ddb4ac76f1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/9eba81138c210db2a519ac936cf7fc1a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/9f5b4ed94a9fd71504a27e3e88fe7be7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/a0ad3271876b61befeb9b3911d24b1c2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/ad9becbf0a78a4ea87830f2aec3624c7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/b4c4f5a7bd5d45e030f0b26a430ce59b.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/b619f4c27c904d82741f5222ba8bb64a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/b8bfcaa7a38dd1e9754af69c4a60c581.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/bb58b00d9c21d59245e85f77b8ee757c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/c8a53c7e100371eff57094845e6f59bc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/ca293db14c8e3c418b27212230723ac9.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/cb6083978e84ca641f84f63236d6de8d.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/cb7fc77f848569a033e72bc31e498f12.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/d165e43c14cc3a4f7b1f11331272601e.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/d2e5c8695a03c933a49f1a0f3a044429.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e35be230201280815fa20bcdb1030925.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/ea19c56be963d75444849d6ea5d13ddf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f27b989ce8155e970d7c825a1036b7fd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f559b0a6475b7cbe9b7748d646611738.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f72253a0fe87f8f131c32b31d1c25367.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f8785b533f8b350e0ecb7b231cccf4b4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/fc355b5280cd03bf311b563850f45ebe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
@@ -221,7 +274,7 @@
       <workItem from="1699458771237" duration="809000" />
       <workItem from="1699469922370" duration="16765000" />
       <workItem from="1699532495555" duration="203000" />
-      <workItem from="1699553840509" duration="1113000" />
+      <workItem from="1699553840509" duration="1481000" />
     </task>
     <task id="LOCAL-00001" summary="swag la lumière au bout du tunnel">
       <option name="closed" value="true" />
@@ -239,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699554108809</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="swag la lumière au bout du tunnel">
+      <option name="closed" value="true" />
+      <created>1699554977742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699554977743</updated>
+    </task>
+    <task id="LOCAL-00004" summary="swag">
+      <option name="closed" value="true" />
+      <created>1699555320315</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699555320315</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,8 +326,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="swag la lumière au bout du tunnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="swag la lumière au bout du tunnel" />
+    <MESSAGE value="swag" />
+    <option name="LAST_COMMIT_MESSAGE" value="swag" />
   </component>
 </project>
